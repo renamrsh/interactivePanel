@@ -75,9 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 valueSeekBar.setProgress(settingValues.get(selectedItemPosition));
                 seekBarValueTextView.setText("Wartość: "+valueSeekBar.getProgress());
                 valueSeekBar.setEnabled(true);
-
-                String clickedPlanet = displayItemsForListView.get(position);
-                Toast.makeText(MainActivity.this, "Kliknięto: " + clickedPlanet, Toast.LENGTH_SHORT).show();
             }
         });
 
