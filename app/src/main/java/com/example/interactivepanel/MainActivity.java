@@ -43,18 +43,21 @@ public class MainActivity extends AppCompatActivity {
         settingNames.add("Jasność Ekranu");
         settingNames.add("Głośność Dźwięków");
         settingNames.add("Czas Automatycznej Blokady");
+
         ArrayList<Integer> settingValues = new ArrayList<>();
         settingValues.add(50);
         settingValues.add(80);
         settingValues.add(30);
+
         ArrayList<String> settingUnits = new ArrayList<>();
         settingUnits.add("%");
         settingUnits.add("%");
         settingUnits.add("s");
+
         ArrayList<String> displayItemsForListView = new ArrayList<>();
-        displayItemsForListView.add(settingNames.get(0)+":"+settingValues.get(0)+settingUnits.get(0));
-        displayItemsForListView.add(settingNames.get(1)+":"+settingValues.get(1)+settingUnits.get(1));
-        displayItemsForListView.add(settingNames.get(2)+":"+settingValues.get(2)+settingUnits.get(2));
+        displayItemsForListView.add(settingNames.get(0)+": "+settingValues.get(0)+settingUnits.get(0));
+        displayItemsForListView.add(settingNames.get(1)+": "+settingValues.get(1)+settingUnits.get(1));
+        displayItemsForListView.add(settingNames.get(2)+": "+settingValues.get(2)+settingUnits.get(2));
 
         ArrayAdapter<String> listAdapter = new ArrayAdapter<>(
                 this,
